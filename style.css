@@ -14,6 +14,7 @@
 body {
     max-width: 1024px;
     margin: auto;
+    padding: 10px;
 }
 
 header {
@@ -74,7 +75,7 @@ nav > a:hover {
     color: black
 }
 
-header > button {
+.getState {
     font-family: "Inter", sans-serif;
     padding: 8px 15px;
     font-size: 11px;
@@ -84,6 +85,105 @@ header > button {
     border: 0;
 }
 
-header > button:hover {
+.getState:hover {
     cursor: pointer;
+}
+
+main {
+    padding: 40px 0;
+}
+
+.forIno {
+    font-family: "Inter", sans-serif;
+    padding: 8px 15px;
+    font-size: 11px;
+    background: #00000020;
+    color: black;
+    border-radius: 5px;
+    border: 0;
+}
+
+.forIno:hover {
+    cursor: pointer;
+}
+
+.fastAction {
+    font-family: "Inter", sans-serif;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    height: inherit;
+    justify-content: space-between;
+    gap: 40px
+}
+
+.info > h1 {
+    color: #007E00;
+    font-size: 48px;
+}
+
+#menu {
+    background: unset;
+    border: 0;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.parameters {
+    color: #686868;
+}
+
+.action {
+    display: flex;
+    gap: 20px
+}
+
+.fastAction > img {
+    width: 40%;
+}
+
+#menu {
+    display: none;
+}
+
+@media (max-width: 924px) {
+    body {
+        max-width: calc(924px - 40px);
+    }
+    nav {
+        display: none;
+    }
+
+    header .getState {
+        display: none;
+    }
+
+    #menu {
+        display: unset;
+    }
+    .emblem {
+        display: none;
+    }
+    .fastAction {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 425px) {
+    body {
+        max-width: 425px;
+    }
+    .city {
+        display: none;
+    }
+    .emblem {
+        display: none;
+    }
+    .fastAction {
+        justify-content: center;
+    }
 }
