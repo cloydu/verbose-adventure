@@ -221,6 +221,27 @@ ul li {
     color: #686868;
 }
 
+.infoPay {
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.infoPay > button {
+    padding: 15px 0;
+}
+
+.infoPay > span > ol {
+    padding: 0 40px;
+}
+
+.infoPay > span {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 @media (max-width: 924px) {
     body {
         max-width: calc(924px - 40px);
