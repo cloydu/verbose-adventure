@@ -242,6 +242,23 @@ ul li {
     gap: 10px;
 }
 
+.guarantees {
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.guarantees > span > ol {
+    padding: 0 40px;
+}
+
+.guarantees > span {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 @media (max-width: 924px) {
     body {
         max-width: calc(924px - 40px);
