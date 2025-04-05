@@ -27,13 +27,11 @@ closeState.addEventListener("click", function () {
 const sendInfo = document.getElementById("sendInfo")
 
 sendInfo.addEventListener("click", function () {
-    console.log(
-        document.getElementById("firstName").value,
-        document.getElementById("secondName").value,
-        document.getElementById("thirdName").value,
-        document.getElementById("birthDay").value,
-        document.getElementById("numberPhone").value,
-        document.getElementById("eMail").value,
-        document.getElementById("passport").value,
-    )
+    localStorage.setItem("Фамилия", document.getElementById("firstName").value);
+    localStorage.setItem("Имя", document.getElementById("secondName").value);
+    localStorage.setItem("Отчество", document.getElementById("thirdName").value);
+    localStorage.setItem("Дата рождения", document.getElementById("birthDay").value);
+    localStorage.setItem("Номер телефона", document.getElementById("numberPhone").value);
+    localStorage.setItem("Электронная почта", document.getElementById("eMail").value);
+    localStorage.setItem("Серия и номер паспорта", document.getElementById("passport").value);
 })
